@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestRX</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_fragment_One">Hello fragment One - OBSERVATOR</string>
+    <string name="hello_fragment_Two">Hello fragment Two</string>
+</resources>
