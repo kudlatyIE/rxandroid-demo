@@ -9,7 +9,17 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements FragmentOne.OnFragmentOneInteractionListener, FragmentTwo.OnFragmentTwoInteractionListener {
 
+/*
+https://developer.android.com/training/data-storage/room/relationships
+https://developer.android.com/training/data-storage/room/accessing-data
+https://developer.android.com/training/data-storage/room/defining-data.html
 
+https://github.com/googlecodelabs/android-room-with-a-view/tree/master/app/src/main/java/com/example/android/roomwordssample
+https://github.com/android/architecture-components-samples/tree/master/BasicRxJavaSample/app
+
+http://androidcode.pl/blog/biblioteki/rxjava/
+http://devzine.pl/2019/04/16/rxjava-w-androidzie-podstawy-cz-1/
+ */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
