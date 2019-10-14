@@ -31,6 +31,20 @@ public class Crime {
         this.crimeTypeDescription = crimeTypeDescription;
     }
 
+    public Crime(int crimeTypeId, int crimeCode, String crimeTypeName, String crimeTypeDescription) {
+        this.crimeTypeId = crimeTypeId;
+        this.crimeCode = crimeCode;
+        this.crimeTypeName = crimeTypeName;
+        this.crimeTypeDescription = crimeTypeDescription;
+    }
+//    void insertOrUpdate(Crime item) {
+//        Crime itemFromDB = getCrimesByCode(item.getCrimeCode());
+//        if (itemFromDB == null)
+//            insert(item);
+//        else
+//            update(item);
+//    }
+
     public int getCrimeTypeId() {
         return crimeTypeId;
     }

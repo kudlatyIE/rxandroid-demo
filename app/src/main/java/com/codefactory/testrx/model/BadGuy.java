@@ -28,9 +28,17 @@ public class BadGuy {
     @ColumnInfo(name = "crime_area_id")
     int crimeAreaId;
 
-    public BadGuy(int badGuyCode, @NonNull String badGuyName) {
+    public BadGuy(int id, int badGuyCode, @NonNull String badGuyName, int crimeAreaId) {
+        this.id = id;
         this.badGuyCode = badGuyCode;
         this.badGuyName = badGuyName;
+        this.crimeAreaId = crimeAreaId;
+    }
+
+    public BadGuy(int badGuyCode, @NonNull String badGuyName, int crimeAreaId) {
+        this.badGuyCode = badGuyCode;
+        this.badGuyName = badGuyName;
+        this.crimeAreaId = crimeAreaId;
     }
 
     public int getBadGuyId() {
@@ -48,5 +56,13 @@ public class BadGuy {
 
     public void setBadGuyName(@NonNull String badGuyName) {
         this.badGuyName = badGuyName;
+    }
+
+    public int getCrimeAreaId() {
+        return crimeAreaId;
+    }
+
+    public void setCrimeAreaId(int crimeAreaId) {
+        this.crimeAreaId = crimeAreaId;
     }
 }

@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import io.reactivex.disposables.CompositeDisposable;
+
 public class MainActivity extends AppCompatActivity implements FragmentOne.OnFragmentOneInteractionListener, FragmentTwo.OnFragmentTwoInteractionListener {
 
 /*
@@ -19,7 +21,15 @@ https://github.com/android/architecture-components-samples/tree/master/BasicRxJa
 
 http://androidcode.pl/blog/biblioteki/rxjava/
 http://devzine.pl/2019/04/16/rxjava-w-androidzie-podstawy-cz-1/
+
+RX-JAVA
+https://blog.mindorks.com/understanding-types-of-observables-in-rxjava-6c3a2d0819c8
+
+Google All:
+https://github.com/android/architecture-components-samples
  */
+
+    private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +37,10 @@ http://devzine.pl/2019/04/16/rxjava-w-androidzie-podstawy-cz-1/
         setContentView(R.layout.activity_main);
 
         initViews();
+
+    }
+
+    private void initData(){
 
     }
 
